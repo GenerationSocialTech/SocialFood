@@ -1,13 +1,13 @@
-package com.SocialTech.SocialFood;
+package com.socialTech.socialFood;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SocialFoodApplication {
+public class socialFoodApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SocialFoodApplication.class, args);
+		SpringApplication.run(socialFoodApplication.class, args);
 	}
 
 }

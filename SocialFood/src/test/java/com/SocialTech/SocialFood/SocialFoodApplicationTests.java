@@ -1,10 +1,10 @@
-package com.SocialTech.SocialFood;
+package com.socialTech.socialFood;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SocialFoodApplicationTests {
+class socialFoodApplicationTests {
 
 	@Test
 	void contextLoads() {

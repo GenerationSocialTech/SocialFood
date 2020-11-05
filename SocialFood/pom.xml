@@ -8,10 +8,10 @@
 		<version>2.3.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.SocialTech</groupId>
-	<artifactId>SocialFood</artifactId>
+	<groupId>com.socialTech</groupId>
+	<artifactId>socialFood</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SocialFood</name>
+	<name>socialFood</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
