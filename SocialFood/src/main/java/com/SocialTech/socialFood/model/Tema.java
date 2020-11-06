@@ -14,7 +14,7 @@ import org.hibernate.annotations.Type;
 import com.sun.istack.NotNull;
 
 @Entity
-@Table(name = "tema")
+@Table(name = "tb_tema")
 public class Tema {
 
 		@Id
