@@ -1,7 +1,5 @@
 package com.socialTech.socialFood.model;
 
-
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,58 +7,54 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
-import org.hibernate.annotations.Type;
-
 import com.sun.istack.NotNull;
 
 @Entity
 @Table(name = "tb_tema")
 public class Tema {
 
-		@Id
-		@GeneratedValue(strategy = GenerationType.IDENTITY) //chave primária
-		private long id;
-	
-		@NotNull 
-		@Size(min = 5, max= 100) //tamanho 
-		private String tema;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // chave primária
+	private long id;
 
-		
-	    private boolean ativo;
-		
-		
-		private boolean perecivel;
+	@NotNull
+	@Size(min = 5, max = 100) // tamanho
+	private String tema;
 
-		public long getId() {
-			return id;
-		}
+	private boolean ativo;
 
-		public void setId(long id) {
-			this.id = id;
-		}
+	private boolean perecivel;
 
-		public String getTema() {
-			return tema;
-		}
+	public long getId() {
+		return id;
+	}
 
-		public void setTema(String tema) {
-			this.tema = tema;
-		}
+	public void setId(long id) {
+		this.id = id;
+	}
 
-		public boolean isAtivo() {
-			return ativo;
-		}
+	public String getTema() {
+		return tema;
+	}
 
-		public void setAtivo(boolean ativo) {
-			this.ativo = ativo;
-		}
+	public void setTema(String tema) {
+		this.tema = tema;
+	}
 
-		public boolean isPerecivel() {
-			return perecivel;
-		}
+	public boolean isAtivo() {
+		return ativo;
+	}
 
-		public void setPerecivel(boolean perecivel) {
-			this.perecivel = perecivel;
-		}
+	public void setAtivo(boolean ativo) {
+		this.ativo = ativo;
+	}
+
+	public boolean isPerecivel() {
+		return perecivel;
+	}
+
+	public void setPerecivel(boolean perecivel) {
+		this.perecivel = perecivel;
+	}
 
 }
