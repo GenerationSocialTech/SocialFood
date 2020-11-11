@@ -25,14 +25,10 @@ public class Tema {
 		@Size(min = 5, max= 100) //tamanho 
 		private String tema;
 
-		@NotNull
-		@Type(type="true_false")
-	    @Column(name="ativo")
+		
 	    private boolean ativo;
 		
-		@NotNull
-		@Type(type="true_false")
-	    @Column(name="perecivel")
+		
 		private boolean perecivel;
 
 		public long getId() {
