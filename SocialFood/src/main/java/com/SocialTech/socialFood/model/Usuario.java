@@ -28,6 +28,7 @@ public class Usuario {
 
 	@NotNull
 	private String senha;
+	
 
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("usuario")

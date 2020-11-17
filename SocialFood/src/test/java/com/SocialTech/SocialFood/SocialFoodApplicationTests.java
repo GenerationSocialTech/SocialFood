@@ -1,4 +1,4 @@
-package com.socialTech.SocialFood;
+package com.socialTech.socialFood;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
