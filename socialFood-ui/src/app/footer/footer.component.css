@@ -1,5 +1,12 @@
 /* footer social icons */
 
+.bg-cor{
+  background-color: #582A84;
+}
+.rodape-cor{
+  background-color: #6A4276;
+}
+
 ul.social-network {
     list-style: none;
     display: inline;
@@ -13,18 +20,10 @@ ul.social-network {
     padding: 5px;
   }
   
-  .faFacebook, .faLinkedin, .faInstagram{
-      color: white;
+  .faGithub{
+      color:black;
   }
   
-  .faFacebook:hover{
-    color: #3b5998;
-  }
-  
-  .faLinkedin:hover{
-  color: #0072b1;
-  }
-  
-  .faInstagram:hover{
-  color: #C13584;
+  .faGithub:hover{
+    color:grey;
   }
