@@ -1,6 +1,6 @@
-export class UserLogin{
+export class UserLogin {
 
     public email: string;
     public senha: string;
-    public token: String;
+    public token: string;
 }

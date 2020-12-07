@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
   entrar(){
     this.authService.logar(this.userLogin).subscribe((resp:UserLogin) =>{
       this.userLogin = resp
+      localStorage.setItem('token', this.userLogin.token)
       this.router.navigate(['/feed'])
     })
   }
