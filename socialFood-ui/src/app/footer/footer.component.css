@@ -1,10 +1,9 @@
 /* footer social icons */
 
-.bg-cor{
-  background-color: #582A84;
-}
+
 .rodape-cor{
-  background-color: #6A4276;
+  background: linear-gradient(90deg, rgba(255,63,96,1) 0%, rgba(223,93,78,1) 100%);
+
 }
 
 ul.social-network {

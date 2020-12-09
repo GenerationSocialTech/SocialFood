@@ -1,43 +1,37 @@
-<div class="container-fluid d-flex justify-content-center">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-  
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link texto text-monospace text-uppercase font-weight-bold p-3" routerLink='/home'>Home <span class="sr-only">(página atual)</span></a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link texto text-monospace text-uppercase font-weight-bold p-3" routerLink='/feed'>Feed</a>
-          </li>
+<header class="header_area">
+  <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <h1 style="color: black;">Social Food.</h1>
+        <button class="navbar-toggler"  style="color: whi;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
-          <div *ngIf='auth.btnLogin()'>
-            <li class="nav-item">
-              <a class="nav-link texto text-monospace text-uppercase font-weight-bold p-3" routerLink='/login'>Login</a>
-            </li>
-          </div>
-          
-          <div *ngIf='auth.btnLogin()'>
-            <li class="nav-item">
-              <a class="nav-link texto text-monospace text-uppercase font-weight-bold p-3" routerLink='/cadastro'>Cadastro</a>
-            </li>
-          </div>
+        </button>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+          <ul class="nav navbar-nav menu_nav ml-auto">
+            <li class="nav-item"><a class="nav-link"  routerLink='/home'>Home</a></li>
 
-          <li class="nav-item">
-            <a class="nav-link texto text-monospace text-uppercase font-weight-bold p-3" routerLink='/sobre-nos'>Sobre nós</a>
-          </li>
+            <li class="nav-item"><a class="nav-link"  routerLink='/feed'>Feed</a></li>
 
-          <div *ngIf='auth.btnSair()'> 
-            <li class="nav-item">
-              <a class="nav-link texto text-monospace text-uppercase font-weight-bold p-3" (click)='sair()'>Sair</a>
-            </li>
-          </div>
+            <div class="collapse navbar-collapse offset" id="navbarSupportedContent" style="justify-content: end !important">
+              <li class="nav-item"><a class="nav-link"  routerLink='/login'>Login</a></li>
 
-        </ul>
+              <li class="nav-item"><a class="nav-link"  routerLink='/cadastro'>Cadastro</a></li>
+
+              <li class="nav-item"><a class="nav-link"  routerLink='/sobre-nos'>Sobre nós</a></li>
+
+            </div>
+
+            
+
+
+            
+
+          </ul>
+        </div>
       </div>
     </nav>
   </div>
+</header>
