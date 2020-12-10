@@ -15,11 +15,22 @@
 
             <li class="nav-item"><a class="nav-link"  routerLink='/feed'>Feed</a></li>
 
+            
+
             <div class="collapse navbar-collapse offset" id="navbarSupportedContent" style="justify-content: end !important">
-              <li class="nav-item"><a class="nav-link"  routerLink='/login'>Login</a></li>
+              <div *ngIf ='auth.btnLogin()'>
+                <li class="nav-item"><a class="nav-link"  routerLink='/login'>Login</a></li>
+              </div>
 
-              <li class="nav-item"><a class="nav-link"  routerLink='/cadastro'>Cadastro</a></li>
+              <div *ngIf ='auth.btnLogin()'>
+                <li class="nav-item"><a class="nav-link"  routerLink='/cadastro'>Cadastro</a></li>
+              </div>
 
+              <div *ngIf ='auth.btnSair()'>
+                <li class="nav-item"><a class="nav-link"  (click)='sair()'>Sair</a></li>
+              </div>
+
+              
               <li class="nav-item"><a class="nav-link"  routerLink='/sobre-nos'>Sobre nós</a></li>
 
             </div>
