@@ -52,6 +52,10 @@ a {
     text-decoration: none;
     outline: none; }
 
+p {
+  text-align:justify
+}
+
 .row.m0 {
   margin: 0px; }
 
