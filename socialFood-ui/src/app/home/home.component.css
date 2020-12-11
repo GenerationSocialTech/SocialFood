@@ -3,7 +3,6 @@
 @Author: Rocky Ahmed
 @URL: http://wethemez.com
 Author E-mail: rockybd1995@gmail.com
-
 This file contains the styling for the actual theme, this
 is the file you need to edit to change the look of the
 theme.
@@ -14,9 +13,7 @@ theme.
 @Developed By: Rocky Ahmed
 @Developer URL: http://rocky.wethemez.com
 Author E-mail: rockybd1995@gmail.com
-
 @Default Styles
-
 Table of Content:
 01/ Variables
 02/ predefin
@@ -31,7 +28,6 @@ Table of Content:
 11/ service  
 12/ contact 
 13/ footer
-
 =====================================================================*/
 /*----------------------------------------------------*/
 /*font Variables*/
@@ -51,6 +47,10 @@ a {
   a:hover, a:focus {
     text-decoration: none;
     outline: none; }
+
+p {
+  text-align:justify
+}
 
 .row.m0 {
   margin: 0px; }
@@ -3256,4 +3256,3 @@ h6 {
   color: #fff; }
 .area-heading.light p {
   color: #fff; }
-
