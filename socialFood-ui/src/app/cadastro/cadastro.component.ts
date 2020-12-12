@@ -21,10 +21,18 @@ export class CadastroComponent implements OnInit {
   ) { }
 
   ngOnInit(){
+    this.user.ong= false;
+
   }
+
+
   conferirSenha(event: any){
     this.senha = event.target.value
 
+  }
+
+  marcarCheckbox(e: any){
+    this.user.ong = e.target.checked;
   }
 
   cadastrar() {
