@@ -29,6 +29,8 @@ public class Usuario {
 	@NotNull
 	private String senha;
 	
+	private boolean ong;
+	
 
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("usuario")
@@ -64,6 +66,15 @@ public class Usuario {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	
+
+	public boolean isOng() {
+		return ong;
+	}
+
+	public void setOng(boolean ong) {
+		this.ong = ong;
 	}
 
 	public List<Postagem> getPostagem() {
