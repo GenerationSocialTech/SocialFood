@@ -34,9 +34,12 @@ public class Postagem {
 	private String descricao;
 
 	private boolean status;
+	
+	private String imagem;
 
 	@NotNull
 	private String regiao;
+	
 
 	@ManyToOne
 	@JsonIgnoreProperties("postagem")
@@ -76,6 +79,15 @@ public class Postagem {
 
 	public void setData(Date data) {
 		this.data = data;
+	}
+	
+	
+	public String getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(String imagem) {
+		this.imagem = imagem;
 	}
 
 	public String getDescricao() {
