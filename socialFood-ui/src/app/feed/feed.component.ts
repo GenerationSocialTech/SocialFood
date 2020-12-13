@@ -33,6 +33,10 @@ export class FeedComponent implements OnInit {
     this.findAllTemas()
   }
 
+  marcar(e : any){
+    this.tema.ativo = e.target.checked;
+  }
+
   findAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp : Postagem[]) =>{
       this.listaPostagens = resp
