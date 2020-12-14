@@ -1,135 +1,149 @@
-.login-block {
-    background-color: #f4f4f4;
-    float: left;
-    width: 300px;
-    padding: 50px 0;
-  }
-  .banner-sec {
-    background: url('https://image.freepik.com/fotos-gratis/caixa-de-doacao-com-comida-na-mesa-de-madeira-velha_104376-853.jpg')
-      no-repeat left bottom;
-    background-size: cover;
-    min-height: 500px;
-    border-radius: 0 10px 10px 0;
-    padding: 0;
-  }
-  .container {
-    background: #fff;
-    border-radius: 10px;
-   box-shadow: 0px 0px 10px;
-  }
-  .carousel-inner {
-    border-radius: 0 10px 10px 0;
-  }
-  .carousel-caption {
-    text-align: left;
-    left: 5%;
-  }
-  .login-sec {
-    padding: 50px 30px;
-    position: relative;
-  }
-  .login-sec .copy-text {
-    position: absolute;
-    width: 80%;
-    bottom: 20px;
-    font-size: 13px;
-    text-align: center;
-  }
-  .login-sec .copy-text i {
-    color: #feb58a;
-  }
-  .login-sec .copy-text a {
-    color: #e36262;
-  }
-  .login-sec h2 {
-    margin-bottom: 30px;
-      font-weight: 800;
-      font-size: 30px;
-      color: black;
-  }
-  .login-sec h2:after {
-    content: " ";
-    width: 100px;
-    height: 5px;
-    background: linear-gradient(90deg, #ff3f60 0%, rgba(223,93,78,1) 100%);
-    display: block;
-    margin-top: 20px;
-    border-radius: 3px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .btn-login {
-    color: white;
-    background :linear-gradient(90deg, rgba(255,63,96,1) 0%, rgba(223,93,78,1) 100%);
-    border: none;
-    font-weight: 600;
-  }
-  .banner-text {
-    width: 70%;
-    position: absolute;
-    bottom: 40px;
-    padding-left: 20px;
-  }
-  .banner-text h2 {
-    color: #fff;
-    font-weight: 600;
-  }
-  .banner-text h2:after {
-    content: " ";
-    width: 100px;
-    height: 5px;
-    background: #fff;
-    display: block;
-    margin-top: 20px;
-    border-radius: 3px;
-  }
-  .banner-text p {
-    color: #fff;
-  }
-  
-  .pull-right{float:right;}
-  .width100{width:100%;}
-  .form-control
-  {
-    border-radius: 3px;
-      box-shadow: 0 3px 6px 0 rgba(0,0,0,0.1), 0 0 2px 0 rgba(0,0,0,0.1);
-      border: solid 1px #bcc2ce;
-  }
-  
-  
-  a
-  {
-    color:#38a72c;
-  }
-  
-  
-  a:hover
-  {
-    color:#38a72c;
-  }
-  
-  
-  svg
-  {
-        background-size: 125% auto;
-  }
 
-.tudo {
-    
-    margin-top: 110px;
-    margin-bottom: 111px;
+.login-block {
+  background-color: #f4f4f4;
+  float: left;
+  width: 300px;
+  padding: 50px 0;
 }
 
+.banner-sec {
+  background: url('https://image.freepik.com/fotos-gratis/caixa-de-doacao-com-comida-na-mesa-de-madeira-velha_104376-853.jpg') no-repeat left bottom;
+  background-size: cover;
+  min-height: 500px;
+  border-radius: 0 10px 10px 0;
+  padding: 0;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+}
+
+.carousel-inner {
+  border-radius: 0 10px 10px 0;
+}
+
+.carousel-caption {
+  text-align: left;
+  left: 5%;
+}
+
+.login-sec {
+  padding: 50px 30px;
+  position: relative;
+}
+
+.login-sec .copy-text {
+  position: absolute;
+  width: 80%;
+  bottom: 20px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.login-sec .copy-text i {
+  color: #feb58a;
+}
+
+.login-sec .copy-text a {
+  color: #e36262;
+}
+
+.login-sec h2 {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 30px;
+  color: black;
+}
+
+.login-sec h2:after {
+  content: " ";
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(90deg, #ff3f60 0%, rgba(223, 93, 78, 1) 100%);
+  display: block;
+  margin-top: 20px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-login {
+  color: white;
+  background: linear-gradient(90deg, rgba(255, 63, 96, 1) 0%, rgba(223, 93, 78, 1) 100%);
+  border: none;
+  font-weight: 600;
+}
+
+.banner-text {
+  width: 70%;
+  position: absolute;
+  bottom: 40px;
+  padding-left: 20px;
+}
+
+.banner-text h2 {
+  color: #fff;
+  font-weight: 600;
+}
+
+.banner-text h2:after {
+  content: " ";
+  width: 100px;
+  height: 5px;
+  background: #fff;
+  display: block;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.banner-text p {
+  color: #fff;
+}
+
+.pull-right {
+  float: right;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.form-control {
+  border-radius: 3px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 0 2px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #bcc2ce;
+}
+
+a {
+  color: #38a72c;
+}
+
+a:hover {
+  color: #38a72c;
+}
+
+svg {
+  background-size: 125% auto;
+}
+
+
+
 .botones:hover {
-    color: #ff3f60;
-    background : white;
-    border: none;
+  color: #ff3f60;
+  background: white;
+  border: none;
 }
 
 .botones {
-    box-shadow: 0px 0px 3px;
+  box-shadow: 0px 0px 3px;
 }
 
 .botones2 {
-    margin-top: 10px;
+  margin-top: 10px;
+}
+
+body{
+  min-height: calc(100vh - 190px);
 }

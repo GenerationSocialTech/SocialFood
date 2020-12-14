@@ -1,55 +1,59 @@
-<div class="container tudo">
-    <div class="row">
-        <div class="col-md-4 login-sec">
-            <h2 class="text-center">Entre :)</h2>
 
-            <div class="form-group">
-                <label for="nome" class="font-weight-bold ">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome"
-                    [(ngModel)]='user.nome'>
-            </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 login-sec">
+                <h2 class="text-center">Entre :)</h2>
 
-            <div class="form-group">
-                <label for="email" class="font-weight-bold ">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Email" [(ngModel)]= 'user.email'>
-            </div>
-
-            <label class="container"> 
-                <input type="checkbox" [(ngModel)]="user.ong"  data-md-icheck (change)="marcarCheckbox($event)"/>
-                    Você é uma ong? <span *ngIf="this.user.ong">Sim</span><span *ngIf="!this.user.ong">Não</span>
-                
-                  <span class="checkmark"></span>
-           </label>
-
-           
-           
-            <div class="form-group">
-                <label for="senha" class="font-weight-bold e">Senha</label>
-                <input type="password" class="form-control" id="senha" placeholder="senha" (input)= 'conferirSenha($event)' value = '{{senha}}' >
-            </div>
-
-
-            <div class="form-group">
-                <label for="senhaConf" class="font-weight-bold">Confirmar Senha</label>
-                <input type="password" class="form-control" id="senhaConf" placeholder= "senha" [(ngModel)]='user.senha'>
-            </div>
-
-            <div class="form-group mt-6 botones2">
-                <button type="submit" class="btn btn-login width100 botones" (click)='cadastrar()' >Cadastrar</button>
-            </div>
-
-
-
-            <!-- <div class="copy-text"></div> -->
-        </div>
-        <div class="col-md-8 banner-sec">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
-                <div class="carousel-inner" role="listbox">
-
+                <div class="form-group">
+                    <label for="nome" class="font-weight-bold ">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome"
+                        [(ngModel)]='user.nome'>
                 </div>
 
+                <div class="form-group">
+                    <label for="email" class="font-weight-bold ">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" [(ngModel)]='user.email'>
+                </div>
+
+                <label class="container">
+                    <input type="checkbox" [(ngModel)]="user.ong" data-md-icheck (change)="marcarCheckbox($event)" />
+                    Você é uma ong? <span *ngIf="this.user.ong">Sim</span><span *ngIf="!this.user.ong">Não</span>
+
+                    <span class="checkmark"></span>
+                </label>
+
+
+
+                <div class="form-group">
+                    <label for="senha" class="font-weight-bold e">Senha</label>
+                    <input type="password" class="form-control" id="senha" placeholder="senha"
+                        (input)='conferirSenha($event)' value='{{senha}}'>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="senhaConf" class="font-weight-bold">Confirmar Senha</label>
+                    <input type="password" class="form-control" id="senhaConf" placeholder="senha"
+                        [(ngModel)]='user.senha'>
+                </div>
+
+                <div class="form-group mt-6 botones2">
+                    <button type="submit" class="btn btn-login width100 botones"
+                        (click)='cadastrar()'>Cadastrar</button>
+                </div>
+
+
+
+                <!-- <div class="copy-text"></div> -->
+            </div>
+            <div class="col-md-8 banner-sec">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner" role="listbox">
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-</div>

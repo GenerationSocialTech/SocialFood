@@ -1,4 +1,6 @@
-
+body{
+    min-height: calc(100vh - 190px);
+  }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300);
 

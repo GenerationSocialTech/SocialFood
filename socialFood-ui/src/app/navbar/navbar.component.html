@@ -1,46 +1,31 @@
 <header class="header_area">
   <div class="main_menu">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <img src="https://i.ibb.co/Tkb0w71/logo-pb.png"  style="width: 60px; height: 60px;" alt="">
+        <img src="https://i.ibb.co/2F79T4G/logo-final-nav.png" style="width: 100px; height: 100px;"
+          alt="Logo da rede social. Consiste em dois balões de fala, um para o lado o posto do outro. No primeiro balão tem um garfo e uma colher na vertical. A cor de doto o logo é laranja.">
         <h1 class="fontLogo">Social Food.</h1>
-        <button class="navbar-toggler"  style="color: whi;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
+        <button class="navbar-toggler mr-2" style="background-color: #ea681c;" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
         </button>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
           <ul class="nav navbar-nav menu_nav ml-auto">
-            <li class="nav-item"><a class="nav-link"  routerLink='/home'>Home</a></li>
+            <li class="nav-item"><a class="nav-link pl-3 pr-4" routerLink='/home'>Home</a></li>
 
-            <li class="nav-item"><a class="nav-link"  routerLink='/feed'>Feed</a></li>
+            <li class="nav-item"><a class="nav-link pl-3 pr-4" routerLink='/feed'>Feed</a></li>
 
-            
+            <li class="nav-item" *ngIf='auth.btnLogin()'><a class="nav-link pl-3 pr-4" 
+              routerLink='/login'>Login</a></li>
 
-            <div class="collapse navbar-collapse offset" id="navbarSupportedContent" style="justify-content: end !important">
-              <div *ngIf ='auth.btnLogin()'>
-                <li class="nav-item"><a class="nav-link pl-3 pr-5"  routerLink='/login'>Login</a></li>
-              </div>
+            <li class="nav-item" *ngIf='auth.btnLogin()'><a class="nav-link pl-3 pr-4"
+                routerLink='/cadastro'>Cadastro</a></li>
 
-              <div *ngIf ='auth.btnLogin()'>
-                <li class="nav-item"><a class="nav-link pl-3 pr-4"  routerLink='/cadastro'>Cadastro</a></li>
-              </div>
+            <li class="nav-item" *ngIf='auth.btnSair()'><a class="nav-link pl-3 pr-4" (click)='sair()'>Sair</a></li>
 
-              <div *ngIf ='auth.btnSair()'>
-                <li class="nav-item"><a class="nav-link pl-3 pr-5"  (click)='sair()'>Sair</a></li>
-              </div>
-
-              
-              <li class="nav-item"><a class="nav-link pl-3 pr-3"  routerLink='/sobre-nos'>Sobre nós</a></li>
-
-            </div>
-
-            
-
-
-            
-
+            <li class="nav-item"><a class="nav-link pl-3 pr-4" routerLink='/sobre-nos'>Sobre nós</a></li>
           </ul>
         </div>
       </div>
