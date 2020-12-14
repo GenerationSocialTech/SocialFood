@@ -5,7 +5,7 @@
     <!--================Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <section class="home_banner_area">
+    <section class="home_banner_area" data-type="background" data-speed="10">
         <div class="banner_inner d-flex align-items-center">
             <div class="overlay"></div>
             <div class="container">
@@ -33,7 +33,7 @@
 
 
     <!--================About  Area =================-->
-    <section class="about-area area-padding-bottom">
+    <section class="about-area area-padding-bottom" data-type="background" data-speed="10">
         <div class="container">
             <div class="row align-items-center">
 
@@ -79,7 +79,7 @@
     <!--================About Area End =================-->
 
     <!--================Feature  Area =================-->
-    <section class="feature-area area-padding bg_one">
+    <section class="feature-area area-padding bg_one" data-type="background" data-speed="10">
         <div class="container">
             <div class="row align-items-center">
 
@@ -127,7 +127,7 @@
 
 
     <!--================About  Area =================-->
-    <section class="statics-area area-padding">
+    <section class="statics-area area-padding" data-type="background" data-speed="10">
         <div class="container">
             <div class="row " style="align-items: center;">
 
@@ -169,5 +169,26 @@
 
     <script src="/src/app/js/jquery-2.2.4.min.js"></script> <!-- <script src="js/jquery-2.2.4.min.js"></script>-->
     <script src="/src/app/js/theme.js"></script>
+
+    <!--Scrool com JQuery-->
+    <script src="jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('section[data-type="background"]').each(function(){
+             var $bgobj = $(this); // assigning the object
+    
+            $(window).scroll(function() {
+            var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+            
+            // Put together our final background position
+            var coords = '50% '+ yPos + 'px';
+
+            // Move the background
+            $bgobj.css({ backgroundPosition: coords });
+            }); 
+        });    
+    });
+    </script>
+
 
 </body>

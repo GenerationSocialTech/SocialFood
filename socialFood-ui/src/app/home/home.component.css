@@ -341,14 +341,15 @@ ul {
     width: 100%;
     min-height: 900px; }
     .home_banner_area .banner_inner .overlay {
-      background: url('https://i.ibb.co/JqKyJQs/bg-gold1.png') no-repeat scroll center center; /* imagem 1*/
+      background: url('https://i.ibb.co/JqKyJQs/bg-gold1.png') no-repeat scroll center center; /* banner 1*/
       position: absolute;
       left: 0;
       right: 0;
       top: 0;
       height: 100%;
       bottom: 0;
-      z-index: -1; }
+      z-index: -1;
+      background-attachment: fixed; }
     .home_banner_area .banner_inner .banner_content {
       color: #fff; }
       .home_banner_area .banner_inner .banner_content h3 {
@@ -1467,7 +1468,8 @@ ul {
   padding-top: 130px; }
 
 .bg_one {
-  background:url('https://i.ibb.co/4WNwL46/bg-com-abacaxi-1.png') no-repeat; } /* banner 2 */
+  background:url('https://i.ibb.co/4WNwL46/bg-com-abacaxi-1.png') no-repeat; 
+  background-attachment: fixed; } /* banner 2 */
 
 .sample-text-area {
   padding: 100px 0px; }
@@ -3108,7 +3110,7 @@ h6 {
     background-position: center center;
     background-repeat: no-repeat;
     right: 0;
-    top: 0; }
+    top: 0;  }
   @media (max-width: 1199px) {
     .about-area:after {
       right: -44px;
