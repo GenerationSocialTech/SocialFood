@@ -37,4 +37,8 @@ export class TemaService {
     return this.http.delete(`http://localhost:9000/temas/${id}`, this.token)
   }
 
+  getByNomeTema(tema: string):Observable<Tema[]>{
+    return this.http.get<Tema[]>(`http://localhost:9000/temas/tema/${tema}`, this.token)
+  }
+
 }
