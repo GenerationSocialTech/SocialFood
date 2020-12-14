@@ -27,7 +27,7 @@
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-        color: #f84b67; }
+        color: #FF6400;; }
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
@@ -210,5 +210,6 @@
 
   .fontLogo {
     font: 400 30px/80px "Poppins", sans-serif;
+    color: #EA681C;
   }
   
