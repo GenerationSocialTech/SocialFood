@@ -1,6 +1,34 @@
-
-
+/*------CSS Geral------*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300);
+
+body{
+    min-height: calc(100vh - 190px);
+  }
+/*------/CSS Geral------*/
+
+
+/*------CSS Texto e Vídeo------*/
+.texto {
+    
+    justify-content: center;
+ }
+ /*------/CSS Texto e Vídeo------*/
+
+
+/*------CSS Jubotron------*/
+.jumboCss {
+    background: url('https://i.ibb.co/pW1gYjG/bg-sem-img.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+/*------/CSS Jubotron------*/
+
+
+/*------CSS Cards------*/
+.lado {
+    justify-content: space-around;
+    display: flex;
+}
 
 .profile-card * ,
 .profile-card *:before ,
@@ -181,23 +209,11 @@
     -o-transform: translateY(0);
     transform: translateY(0);
 }
+/*------/CSS Cards------*/
 
-.lado {
-    justify-content: space-around;
-    display: flex;
-  
-}
 
-.jumboCss {
-    background: url('https://i.ibb.co/pW1gYjG/bg-sem-img.png');
-    background-repeat: no-repeat;
-   background-size: 100%;
-}
 
-.texto {
-    
-   justify-content: center;
-}
+
 
 
 
