@@ -26,6 +26,12 @@ export class LoginComponent implements OnInit {
     this.authService.logar(this.userLogin).subscribe((resp:UserLogin) =>{
       this.userLogin = resp
       environment.token = this.userLogin.token
+      environment.nome = this.userLogin.nome
+      environment.sobre = this.userLogin.sobre
+      environment.imagem = this.userLogin.imagem
+      environment.ong = this.userLogin.ong
+      environment.id  = this.userLogin.id
+      
       this.router.navigate(['/feed'])
     })
   }

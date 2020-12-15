@@ -1,0 +1,60 @@
+<div class="card mt-5 mb-5 fluid">
+    <div class="row ">
+            <div class="col-md-4 lado1">
+                <img src="{{item.imagem}}" class="w-100">   
+            </div>
+            <div class="col-md-8 ">
+                <div class="card-block ">
+                    <h5 class="espaco" style="color: rgba(44, 43, 43, 0.8)">{{post.tema}}<small><br>Postado em {{post.data | date: 'dd/MM/yyyy'}} às {{item.data | date:'HH:mm'}}, {{post.regiao}}.</small></h5>
+                 
+                    <h4 class="card-title ">{{post.titulo}}</h4>
+    
+                    <p>{{post.descricao}}<p>
+                    <div class="espaco">
+                        
+                        <a [routerLink]="['/editar-post', item.id]" class="btn corbtn mr-3" style="background: linear-gradient(90deg, #ff3f60 0%, rgba(223,93,78,1) 100%); color: white;">Editar</a>
+                        <a [routerLink]="['/delete-post', item.id]" class="btn corbtn " style="background: linear-gradient(90deg, #ff3f60 0%, rgba(223,93,78,1) 100%); color: white;">Apagar</a>
+    
+                        <label class="container "> 
+                            <input type="checkbox" [(ngModel)]="post.ativo"  data-md-icheck (change)="marcar($event)"/>
+                                 Marcar postagem? <span *ngIf="this.post.ativo"></span><span *ngIf="!this.post.ativo"></span>
+                            
+                              <span class="checkmark"></span>
+                       </label> 
+                    </div>
+                </div>
+            </div>
+        
+        
+    </div>
+</div>
+
+
+<div class="card mt-5 mb-5" >
+    <div class="card-header">
+      <div class="row d-flex align-items-center">
+          <div class="col-md-12">
+            <h5 class="card-title">{{post.titulo}}</h5>
+            <small>Região:{{post.regiao}}</small>
+            <label class="container"> 
+              <input type="checkbox" [(ngModel)]="post.ativo"  data-md-icheck (change)="marcar($event)"/>
+                   Marcar postagem? <span *ngIf="this.post.ativo"></span><span *ngIf="!this.post.ativo"></span>
+              
+                <span class="checkmark"></span>
+            </label>
+            <img class="card-img-bottom" src="{{post.imagem}}" alt="Imagem de capa do card">
+         </div>
+      </div>
+  </div>
+
+  <div class="card-body" >
+    <p class="card-text" aria-describedby="texto"> {{post.descricao}} </p>
+    <small id="texto" class="form-text m-0 text-muted mb-3 text-monospace">
+      Postado em {{post.data | date: 'dd/MM/yyyy'}} às {{post.data | date:'HH:mm'}}</small>
+  </div>
+
+  </div>
+
+
+
+

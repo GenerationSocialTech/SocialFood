@@ -1,4 +1,7 @@
 import { Tema } from './Tema';
+import { User } from './User';
+
+
 
 export class Postagem{
     public id: number;
@@ -9,4 +12,5 @@ export class Postagem{
     public status: boolean;
     public regiao: string;
     public tema: Tema;
+    public usuario: User;
 }

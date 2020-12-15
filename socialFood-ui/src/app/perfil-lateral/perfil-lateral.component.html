@@ -1,17 +1,45 @@
-<div class="card border-0" style="width: 18rem;">
-    <div class = "d-flex justify-content-center">
-        <img class="card-img-top " src="https://i.imgur.com/gOk0qFy.jpg" alt="Imagem de capa do card">
+<div class="container styleAll">
+    <!-- News jumbotron -->
+  <div class="jumbotron text-center hoverable p-4 styleAll1">
+  
+    <!-- Grid row -->
+    <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 offset-md-1 mx-3 my-3">
+  
+            <!-- Featured image -->
+            <div class="view overlay ">
+                <img src="{{image}}" class= "img-fluid styleImg"
+                    alt="Sample image for first version of blog listing">
+                <a>
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-7 text-md-left ml-3 mt-3">
+  
+            <!-- Excerpt -->
+            <a href="#!" class="blue-text">
+                <h6 class="h6 pb-1"><i class="fas fa-desktop pr-1"></i> Empresa</h6>
+            </a>
+  
+            <h4 class="h4 mb-4">{{nome}}</h4>
+  
+            <p class="font-weight-normal">{{sobre}}</p>
+  
+            <a routerLink= '/postagens-ativas'class="btn styleBtn">Postagens marcadas</a>
+  
+        </div>
+        <!-- Grid column -->
+  
     </div>
-    
-    <div class="card-body bg-cor">
-      <h5 class="card-title text-center text-monospace  font-weight-bold">lalal</h5>
-      <p class="card-text text-center text-monospace  font-italic">
-        Estudante fullstack na Generation Brasil.
-      </p>
-
-      <a href="https://www.linkedin.com/in/lucas-silva-trevizan/" target ="_blank" class= "btn btn-outline-info mb-3 d-flex justify-content-center">Linkedin</a>
-
-      <a href="https://github.com/LucasTrevizanbr" target = "_blank" class= "btn  btn-outline-dark d-flex justify-content-center">Github</a>
-      
-    </div>  
-</div>
+    <!-- Grid row -->
+  
+  </div>
+  <!-- News jumbotron -->
+  </div>

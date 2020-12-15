@@ -63,6 +63,7 @@ export class FeedComponent implements OnInit {
     this.tema.id = this.idTema
     this.postagem.tema = this.tema
     
+    
     if(this.postagem.titulo === " " ||  this.postagem.tema === null || this.postagem.regiao ===  " " || this.postagem.descricao === " "){
       this.alert.showAlertDanger("Preencha todos os campos antes de publicar!!!")
      }else{

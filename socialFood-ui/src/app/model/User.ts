@@ -5,4 +5,6 @@ export class User{
     public email: string;
     public senha: string;
     public ong: boolean;
+    public imagem: string;
+    public sobre: string;
 }
