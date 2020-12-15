@@ -11,6 +11,7 @@ import { TemaService } from '../service/tema.service';
 })
 export class FeedComponent implements OnInit {
 
+
   key= 'data'
   reverse = true
 
@@ -20,6 +21,7 @@ export class FeedComponent implements OnInit {
   tema: Tema = new Tema()
   listaTemas: Tema[]
   idTema: number
+  
 
 
   constructor(
@@ -74,4 +76,5 @@ export class FeedComponent implements OnInit {
     })
   }
 
+ 
 }
