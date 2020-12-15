@@ -31,6 +31,10 @@ public class Usuario {
 	
 	private boolean ong;
 	
+    private String imagem;
+	
+	private String sobre;
+	
 
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("usuario")
@@ -68,6 +72,21 @@ public class Usuario {
 		this.senha = senha;
 	}
 	
+	public String getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(String imagem) {
+		this.imagem = imagem;
+	}
+
+	public String getSobre() {
+		return sobre;
+	}
+
+	public void setSobre(String sobre) {
+		this.sobre = sobre;
+	}
 
 	public boolean isOng() {
 		return ong;
