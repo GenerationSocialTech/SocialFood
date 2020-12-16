@@ -52,6 +52,6 @@ export class CadastroComponent implements OnInit {
         } else {
           this.alert.showAlertInfo('Suas senhas não conferem')
         }
-      }
+  }
 
 }

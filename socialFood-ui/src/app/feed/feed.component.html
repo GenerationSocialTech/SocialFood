@@ -84,7 +84,7 @@
               </nav>
         </div>
 
-        <div class="row w-100">
+        <div class="row">
           <div class="tab-content" id="nav-tabContent">
 
             <div class="tab-pane fade show active" id="minhas-postagens" role="tabpanel" aria-labelledby="nav-postagens-tab">
@@ -101,48 +101,53 @@
         
               <div class="row">
                 <div class="col-md-12">
-        
-                  <div class="card mt-5 mb-5" *ngFor="let item of listaPostagens | orderBy : key : reverse">
-                    <div *ngIf='!item.status'>
-                      <div class="card-header">
-                        <div class="row d-flex align-items-center">
-                          <div class="col-md-8">
-                            <h5 class="card-title">O titulo é esse: {{item.titulo}} </h5>
-                            <h5 class="card-title">O tema é esse: {{item.tema.tema}}</h5>
-                            <h5 class="card-title">Quem postou foi: {{item.usuario.nome}}</h5>
-                            <h5 class="card-title">A região é essa: {{item.regiao}}</h5>
+                  <div class="card mt-5 mb-5 fluid" *ngFor="let item of listaPostagens | orderBy : key :   reverse">
+                    <div *ngIf= '!item.status'>
+                        <div class="row ">
+                          <div class="col-md-4 lado1">
+                              <img src="{{item.imagem}}" class="w-100">
                           </div>
-                          <div class="col-md-4 d-flex justify-content-end">
-        
-                            <div *ngIf='auth.userOng()'>
-                              <button class="mr-3 btn btn-outline-info" [routerLink]="['/editar-post', item.id]">
-                                Editar
-                              </button>
-                            </div>
-        
-                            <div *ngIf='auth.userOng()'>
-                              <button class="btn btn-outline-danger ml-3" [routerLink]="['/delete-post', item.id]">
-                                Apagar
-                              </button>
-                            </div>
-        
-                            <button class="btn btn-outline-success ml-3" [routerLink]="['/post-true', item.id]">
-                              Selecionar postagem
-                            </button>
-        
+                          <div class="col-md-8 ">
+                              <div class="card-block ">
+                  
+                                  <h2 class="card-title mt-3 " style="font-size: 35px;">Aqui é o titulo: {{item.titulo}} <button
+                                          class="btn btn-outline-success mr-4" [routerLink]="['/post-true', item.id]">
+                                          Marcar postagem
+                                      </button></h2>
+                                  <h3 class="card-title " style="font-size: 25px; color: #2c2b2bcc ;">Postado por:
+                                      {{item.usuario.nome}} <br> <small style="color: #2c2b2bcc;">Aqui é o tema:
+                                          {{item.tema.tema}}</small> </h3>
+                  
+                  
+                                  <p style="font-size:20px;">{{item.descricao}}</p>
+                  
+                                  <h5 class="espaco" style="color: #2c2b2bcc">
+                                      <small><br>Postado em {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date:'HH:mm'}},
+                                          {{item.regiao}}
+                                      </small>
+                                  </h5>
+                  
+                  
+                  
+                                  <div class="mb-2">
+                                      <button class=" btn btn-outline-info mr-4" [routerLink]="['/editar-post', item.id]">
+                                          Editar
+                                      </button>
+                  
+                  
+                  
+                                      <button class="btn btn-outline-danger mr-4" [routerLink]="['/delete-post', item.id]">
+                                          Apagar
+                                      </button>
+                  
+                  
+                  
+                                  </div>
+                              </div>
                           </div>
-                        </div>
                       </div>
-        
-                      <div class="card-body">
-                        <p class="card-text" aria-describedby="texto">Isso é minha descricao :{{item.descricao}} </p>
-                        <small id="texto" class="form-text m-0 text-muted mb-3 text-monospace">
-                          Postado em {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date:'HH:mm'}}</small>
-                      </div>
-                      <img class="card-img-bottom" src="{{item.imagem}}" alt="Imagem de capa do card">
-                    </div>
-        
-                  </div>
+                    </div> 
+                  </div>  
                 </div>
               </div>
             </div>
@@ -163,31 +168,58 @@
               </div>
         
               <div class="row">
-                <div class="col-md-12" *ngFor="let item of listaTemas | orderBy : key : reverse">
+                <div class="col-md-12 " *ngFor= "let item of listaTemas | orderBy : key : reverse">
                   <div *ngFor='let post of item.postagem'>
                     <div *ngIf='!post.status'>
-                      <div class="card mt-5 mb-5">
-                        <div class="card-header">
-                          <div class="row d-flex align-items-center">
-                            <div class="col-md-12">
-                              <h5 class="card-title">O titulo é esse: {{post.titulo}} </h5>
-                              <h5 class="card-title">Quem postou foi: {{post.usuario.nome}}</h5>
-                              <h5 class="card-title">A região é essa: {{post.regiao}}</h5>
-                            </div>
+                      <div class="card mt-5 mb-5 fluid">
+                        <div class="row ">
+                          <div class="col-md-4 lado1">
+                              <img src="{{post.imagem}}" class="w-100">
                           </div>
-                        </div>
-        
-                        <div class="card-body">
-                          <p class="card-text" aria-describedby="texto"> {{post.descricao}} </p>
-                          <small id="texto" class="form-text m-0 text-muted mb-3 text-monospace">
-                            Postado em {{post.data | date: 'dd/MM/yyyy'}} às {{post.data | date:'HH:mm'}}</small>
-                        </div>
-                        <img class="card-img-bottom" src="{{post.imagem}}" alt="Imagem de capa do card">
-                      </div>
+                          <div class="col-md-8 ">
+                              <div class="card-block ">
+                  
+                                  <h2 class="card-title mt-3 " style="font-size: 35px;">Aqui é o titulo: {{post.titulo}} <button
+                                          class="btn btn-outline-success mr-4" [routerLink]="['/post-true', post.id]">
+                                          Marcar postagem
+                                      </button></h2>
+                                  <h3 class="card-title " style="font-size: 25px; color: #2c2b2bcc ;">Postado por:
+                                      {{post.usuario.nome}} <br> <small style="color: #2c2b2bcc;">Aqui é o tema:
+                                          </small> </h3>
+                  
+                  
+                                  <p style="font-size:20px;">{{post.descricao}}</p>
+                  
+                                  <h5 class="espaco" style="color: #2c2b2bcc">
+                                      <small><br>Postado em {{post.data | date: 'dd/MM/yyyy'}} às {{post.data | date:'HH:mm'}},
+                                          {{post.regiao}}
+                                      </small>
+                                  </h5>
+                  
+                  
+                  
+                                    <div class="mb-2">
+                                      <button class=" btn btn-outline-info mr-4" [routerLink]="['/editar-post', post.id]">
+                                          Editar
+                                      </button>
+                  
+                  
+                  
+                                      <button class="btn btn-outline-danger mr-4" [routerLink]="['/delete-post', post.id]">
+                                          Apagar
+                                      </button>
+                  
+                  
+                  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                
                     </div>
-        
                   </div>
-                </div>
+                </div> 
               </div>
         
             </div>

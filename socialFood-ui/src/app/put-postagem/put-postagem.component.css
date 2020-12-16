@@ -1,0 +1,9 @@
+.botao {
+    background-color: white;
+    text-decoration: none;
+    border-color: white;
+    background: linear-gradient(90deg, #ff3f60 0%, rgba(223, 93, 78, 1) 100%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}

@@ -24,6 +24,7 @@ import { DeleteTemaComponent } from './delete-tema/delete-tema.component';
 import { AlertasComponent } from './alertas/alertas.component';
 import { GetPostagemAtivaComponent } from './get-postagem-ativa/get-postagem-ativa.component';
 import { PostagemTrueComponent } from './postagem-true/postagem-true.component';
+import { PostagemFalseComponent } from './postagem-false/postagem-false.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { PostagemTrueComponent } from './postagem-true/postagem-true.component';
     DeleteTemaComponent,
     AlertasComponent,
     GetPostagemAtivaComponent,
-    PostagemTrueComponent
+    PostagemTrueComponent,
+    PostagemFalseComponent
   ],
   imports: [
     BrowserModule,
