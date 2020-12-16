@@ -1,25 +1,63 @@
 /*------CSS Geral------*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300);
 
-body{
-    min-height: calc(100vh - 190px);
-  }
+
 /*------/CSS Geral------*/
 
 
 /*------CSS Texto e Vídeo------*/
+h1{
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+
+.p-texto{
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+}
+
+.banner-hero {
+    margin-top: 120px!important;
+}
+
 .texto {
-    
     justify-content: center;
  }
+
+ .abacaxi {
+    background: url(https://i.ibb.co/PQBKzFQ/abacaxi.png) no-repeat;
+    position: absolute;
+    top: 0;
+    right: calc(100% - 400px);
+    left: 0;
+    height: 90%;
+    width: 100%;
+  }
+
+  .morango {
+    background: url(https://i.ibb.co/sRSxHc2/morango.png) no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: calc(100% - 400px);
+    height: 90%;
+    width: 100%;
+  }
+ 
  /*------/CSS Texto e Vídeo------*/
 
 
 /*------CSS Jubotron------*/
 .jumboCss {
-    background: url('https://i.ibb.co/pW1gYjG/bg-sem-img.png');
+    background: url('https://i.ibb.co/vP46mYk/bg-dev.png');
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 100%;
+    margin-top: 100px;
+    margin-top: 120px!important;
+}
+
+.p-jubs{
+    font-family: "Poppins", sans-serif;
 }
 /*------/CSS Jubotron------*/
 
@@ -120,12 +158,13 @@ body{
 }
 
 .profile-card .profile-social-links {
-    display: block;
+    display: flex;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
     position: relative;
     width: 160px;
+    justify-content: center;
 }
 
 .profile-card .profile-social-links li {
@@ -210,10 +249,3 @@ body{
     transform: translateY(0);
 }
 /*------/CSS Cards------*/
-
-
-
-
-
-
-
