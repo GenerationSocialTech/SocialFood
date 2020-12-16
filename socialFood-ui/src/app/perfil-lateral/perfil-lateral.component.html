@@ -1,45 +1,44 @@
 <div class="container styleAll">
     <!-- News jumbotron -->
-  <div class="jumbotron text-center hoverable p-4 styleAll1">
-  
-    <!-- Grid row -->
-    <div class="row">
-  
-        <!-- Grid column -->
-        <div class="col-md-4 offset-md-1 mx-3 my-3">
-  
-            <!-- Featured image -->
-            <div class="view overlay ">
-                <img src="{{image}}" class= "img-fluid styleImg"
-                    alt="Sample image for first version of blog listing">
-                <a>
-                    <div class="mask rgba-white-slight"></div>
-                </a>
+    <div class="jumbotron text-center hoverable p-4 styleAll1" id="dados">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-4 offset-md-1 mx-3 my-3">
+
+                <!-- Featured image -->
+                <div class="view overlay ">
+                    <img src="{{image}}" class="img-fluid styleImg" alt="Sample image for first version of blog listing">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+
             </div>
-  
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-7 text-md-left ml-3 mt-3">
+
+                <!-- Excerpt -->
+                <a href="#!" class="blue-text">
+                    <h6 class="h6 pb-1"><i class="fas fa-desktop pr-1"></i> Empresa</h6>
+                </a>
+
+                <h4 class="h4 mb-4">{{nome}}</h4>
+
+                <p class="font-weight-normal">{{sobre}}</p>
+
+                <a routerLink='/postagens-ativas' class="btn styleBtn">Postagens marcadas</a>
+
+            </div>
+            <!-- Grid column -->
+
         </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-7 text-md-left ml-3 mt-3">
-  
-            <!-- Excerpt -->
-            <a href="#!" class="blue-text">
-                <h6 class="h6 pb-1"><i class="fas fa-desktop pr-1"></i> Empresa</h6>
-            </a>
-  
-            <h4 class="h4 mb-4">{{nome}}</h4>
-  
-            <p class="font-weight-normal">{{sobre}}</p>
-  
-            <a routerLink= '/postagens-ativas'class="btn styleBtn">Postagens marcadas</a>
-  
-        </div>
-        <!-- Grid column -->
-  
+        <!-- Grid row -->
+
     </div>
-    <!-- Grid row -->
-  
-  </div>
-  <!-- News jumbotron -->
-  </div>
+    <!-- News jumbotron -->
+</div>

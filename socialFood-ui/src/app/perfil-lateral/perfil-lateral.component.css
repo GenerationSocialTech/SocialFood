@@ -1,32 +1,37 @@
 .styleImg {
-  height: 300px;
-  width: 400px;
-  border-radius: 10px;
-  transition: box-shadow .7s;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    transition: box-shadow .7s;
 }
 
-.styleImg:hover{
-  box-shadow:  0px 2px 15px;
-  transition: box-shadow .7s;
-  cursor: pointer;
+.styleImg:hover {
+    box-shadow: 0px 2px 15px;
+    transition: box-shadow .7s;
+    cursor: pointer;
 }
 
 .styleAll1 {
-  transition: box-shadow .7s;
-  background-color: white;
-
+    transition: box-shadow .7s;
+    background-color: white;
 }
 
 .styleAll1:hover {
-  transition: box-shadow .7s;
-
+    transition: box-shadow .7s;
 }
 
 .styleBtn {
-  background: linear-gradient(90deg, #ff3f60 0%, rgba(223,93,78,1) 100%);
-  color: white !important;
+    background: linear-gradient(90deg, #ff3f60 0%, rgba(223, 93, 78, 1) 100%);
+    color: white !important;
 }
 
 .styleAll {
     margin-top: 165px;
+}
+
+#dados {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    padding: 40px;
 }
