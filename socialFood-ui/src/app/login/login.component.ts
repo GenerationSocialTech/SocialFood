@@ -31,6 +31,8 @@ export class LoginComponent implements OnInit {
       environment.imagem = this.userLogin.imagem
       environment.ong = this.userLogin.ong
       environment.id  = this.userLogin.id
+
+      console.log("esse é o id "+ environment.id)
       
       this.router.navigate(['/feed'])
     })

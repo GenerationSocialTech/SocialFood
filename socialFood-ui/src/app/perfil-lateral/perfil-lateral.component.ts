@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Tema } from '../model/Tema';
 import { User } from '../model/User';
@@ -20,7 +21,7 @@ export class PerfilLateralComponent implements OnInit {
 
 
   constructor(
-    
+    private router:Router    
   ) { }
 
   ngOnInit(){

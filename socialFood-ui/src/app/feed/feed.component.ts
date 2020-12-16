@@ -3,7 +3,9 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Postagem } from '../model/Postagem';
 import { Tema } from '../model/Tema';
+import { User } from '../model/User';
 import { AlertasService } from '../service/alertas.service';
+import { AuthService } from '../service/auth.service';
 import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
 
@@ -26,16 +28,20 @@ export class FeedComponent implements OnInit {
   idTema: number
   nomeTema: string
 
+  idUsuario: number 
+  usuario : User = new User();
+
 
   constructor(
     private postagemService : PostagemService,
     private temaService: TemaService,
     private alert: AlertasService,
-    private router: Router
+    private router: Router,
+    public auth: AuthService
   ) { }
 
   ngOnInit(){
-
+    this.idUsuario = environment.id;
     let token = environment.token
 
     if(token == ''){
@@ -48,9 +54,6 @@ export class FeedComponent implements OnInit {
     this.findAllTemas()
   }
 
-  marcar(e : any){
-    this.tema.ativo = e.target.checked;
-  }
 
   findAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp : Postagem[]) =>{
@@ -63,6 +66,10 @@ export class FeedComponent implements OnInit {
     this.tema.id = this.idTema
     this.postagem.tema = this.tema
     
+    this.usuario.id = this.idUsuario
+    this.postagem.usuario = this.usuario
+    
+    this.postagem.status = false;
     
     if(this.postagem.titulo === " " ||  this.postagem.tema === null || this.postagem.regiao ===  " " || this.postagem.descricao === " "){
       this.alert.showAlertDanger("Preencha todos os campos antes de publicar!!!")
@@ -113,5 +120,7 @@ export class FeedComponent implements OnInit {
 
     } 
   }
+
+  
 
 }

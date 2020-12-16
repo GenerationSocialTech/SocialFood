@@ -42,9 +42,7 @@ export class TemaService {
     return this.http.get<Tema[]>(`http://localhost:9000/temas/tema/${tema}`, this.token)
   }
 
-  getByAtivoTema():Observable<Tema[]>{
-    return this.http.get<Tema[]>('http://localhost:9000/temas/tema/ativo', this.token)
-  }
+ 
 
 
 

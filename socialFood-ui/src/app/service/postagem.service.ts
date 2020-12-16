@@ -39,4 +39,8 @@ export class PostagemService {
     return this.http.get<Postagem[]>(`http://localhost:9000/postagens/titulo/${titulo}`, this.token)
   }
 
+  getByStatusTrue():Observable<Postagem[]>{
+    return this.http.get<Postagem[]>('http://localhost:9000/postagens/status', this.token)
+  }
+
 }

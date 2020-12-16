@@ -40,4 +40,18 @@ export class AuthService {
     return ok
   }
 
+  userOng(){
+    let ok = false
+    let ong = environment.ong
+
+    if (ong == true) {
+      ok = true
+    }
+    return ok
+  }
+
+  
+
+ 
+
 }

@@ -8,6 +8,7 @@ import { GetPostagemAtivaComponent } from './get-postagem-ativa/get-postagem-ati
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PostTemaComponent } from './post-tema/post-tema.component';
+import { PostagemTrueComponent } from './postagem-true/postagem-true.component';
 import { PutPostagemComponent } from './put-postagem/put-postagem.component';
 import { PutTemaComponent } from './put-tema/put-tema.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path: 'delete-post/:id', component: DeletePostagemComponent},
   {path: 'editar-tema/:id', component: PutTemaComponent},
   {path: 'delete-tema/:id', component: DeleteTemaComponent},
-  {path: 'postagens-ativas', component: GetPostagemAtivaComponent}
+  {path: 'postagens-ativas', component: GetPostagemAtivaComponent},
+  {path: 'post-true/:id', component: PostagemTrueComponent}
 ];
 
 @NgModule({

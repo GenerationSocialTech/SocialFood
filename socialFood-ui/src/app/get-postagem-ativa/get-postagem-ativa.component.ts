@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Postagem } from '../model/Postagem';
 import { Tema } from '../model/Tema';
+import { AuthService } from '../service/auth.service';
 import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
 
@@ -14,19 +15,22 @@ export class GetPostagemAtivaComponent implements OnInit {
   postagem : Postagem = new Postagem()
   listaPostagens: Postagem[]
 
-  tema: Tema = new Tema()
-  listaTemas: Tema[]
-
-
   key= 'data'
   reverse = true
 
   constructor(
     private postagemService:PostagemService,
-    private temaService: TemaService
+    public auth: AuthService
   ) { }
 
   ngOnInit(){
+    this.findAllPostagensTrue()
+  }
+
+  findAllPostagensTrue(){
+    this.postagemService.getByStatusTrue().subscribe((resp: Postagem[])=>{
+      this.listaPostagens = resp
+    })
   }
 
 }
