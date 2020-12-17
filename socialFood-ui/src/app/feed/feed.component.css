@@ -96,6 +96,7 @@
 
 .botao:hover {
     color: #ff3f60;
+    
     background: white;
     border: none;
 }
@@ -111,11 +112,11 @@
 }
 
 a {
-    color: #FF8C00;
+    color: #ff3f60;
 }
 
 a:hover {
-    color: #FF8C00;
+    color: #ff3f60;
 }
 
 .form-control {
@@ -126,7 +127,7 @@ a:hover {
 }
 
 .text {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 #dados {

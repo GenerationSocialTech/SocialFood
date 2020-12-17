@@ -1,63 +1,64 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-          <app-perfil-lateral></app-perfil-lateral>
+  <div class="row"> <!--começo da linha 1--> 
+    
+    <div class="col-md-4">
+      <app-perfil-lateral></app-perfil-lateral>
+    </div>
+
+    <div class="col-md-7">
+      <button class="btn btn-link botao" data-toggle="collapse" data-target="#dados">Editar postagem</button>
+
+      <div id="dados" class="collapse">
+        <div class="form-group">
+          <label class="text font-weight
+              " for="titulo">Título:</label>
+          <input type="text" class="form-control" id="titulo" placeholder="Digite aqui o seu titulo"
+            [(ngModel)]='postagem.titulo'>
         </div>
-        <div class="col-md-8">
-          <h3 class="d-flex justify-content-start mb-4 text">Faça uma Postagem</h3>
-          <button class="btn btn-link botao" data-toggle="collapse" data-target="#dados">Atualizar postagem</button>
 
-          <div id="dados" class="collapse">
-            <div class="form-group">
-              <label class="text font-weight-bold
-                  " for="titulo">Título:</label>
-              <input type="text" class="form-control" id="titulo" placeholder="Digite aqui o seu titulo"
-                [(ngModel)]='postagem.titulo'>
-            </div>
+        <div class="form-group">
+          <label class="text font-weight
+              " for="regiao">Região</label>
+          <input type="text" class="form-control" id="regiao" placeholder="Digite aqui sua regiao"
+            [(ngModel)]='postagem.regiao'>
+        </div>
 
-            <div class="form-group">
-              <label class="text font-weight-bold
-                  " for="regiao">Região</label>
-              <input type="text" class="form-control" id="regiao" placeholder="Digite aqui sua regiao"
-                [(ngModel)]='postagem.regiao'>
-            </div>
-
-            <div class="form-group">
-              <label class="text font-weight-bold
-                  " for="descricao">Descrição</label>
-              <textarea class="form-control" id="descricao" rows="3" placeholder="Digite aqui a descrição da sua postagem"
-                [(ngModel)]='postagem.descricao'></textarea>
-            </div>
+        <div class="form-group">
+          <label class="text font-weight
+              " for="descricao">Descrição</label>
+          <textarea class="form-control" id="descricao" rows="3" placeholder="Digite aqui a descrição da sua postagem"
+            [(ngModel)]='postagem.descricao'></textarea>
+        </div>
 
 
-            <div class="row d-flex align-items-end">
+        <div class="row d-flex align-items-end">
 
-              <div class="col-md-6">
-                <div class="form-group m-0">
-                  <label class="text font-weight-bold
-                    " for="tema">Escolha um tema ou <a routerLink='/cadastro-tema'>Cadastre um novo</a></label>
-                  <select name="tema" id='tema' class="form-control" [(ngModel)]='idTema' (change)='findByIdTema()'>
-                    <option *ngFor='let item of listaTemas' value={{item.id}}>
-                      {{item.tema}}
-                    </option>
-                  </select>
-                </div>
-
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="text font-weight-bold
-                " for="imagem">Deseja adicionar uma imagem?</label>
-              <input type="text" class="form-control" id="imagem" placeholder="Coloque o link da sua imagem aqui"
-                [(ngModel)]='postagem.imagem'>
-            </div>
-
-            
-            <div class="d-flex justify-content-end mt-3">
-                <button type="button" class="btn btn-outline-info w-25" (click)="salvar()">Salvar</button>
+          <div class="col-md-6">
+            <div class="form-group m-0">
+              <label class="text font-weight
+                " for="tema">Escolha um tema ou <a routerLink='/cadastro-tema'>Cadastre um novo</a></label>
+              <select name="tema" id='tema' class="form-control" [(ngModel)]='idTema' (change)='findByIdTema()'>
+                <option *ngFor='let item of listaTemas' value={{item.id}}>
+                  {{item.tema}}
+                </option>
+              </select>
             </div>
 
           </div>
         </div>
+        <div class="form-group">
+          <label class="text font-weight
+            " for="imagem">Deseja adicionar uma imagem?</label>
+          <input type="text" class="form-control" id="imagem" placeholder="Coloque o link da sua imagem aqui"
+            [(ngModel)]='postagem.imagem'>
+        </div>
+
+        <div class="d-flex justify-content-end mt-3">
+          <button type="button" class="btn btn-outline w-100 botao" (click)="salvar()">Salvar</button>
+        </div>
+
       </div>
+    </div>
+  </div>
 </div>
+

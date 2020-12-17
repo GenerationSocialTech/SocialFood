@@ -1,15 +1,11 @@
 <div class="container">
 
-    <div class="row">
-        <div class="col-md-4">
-            <app-perfil-lateral></app-perfil-lateral>
-        </div>
-    </div>
 
-        <div class="row">
+
+        <div class="row text">
             <div class="col-md-12">
                 <div class="card mt-5 mb-5 fluid" *ngFor="let item of listaPostagens | orderBy : key :   reverse">
-                    <div *ngIf= 'item.status'>
+                    
                         <div class="row ">
                           <div class="col-md-4 lado1">
                               <img src="{{item.imagem}}" class="w-100">
@@ -18,7 +14,7 @@
                               <div class="card-block ">
                   
                                   <h2 class="card-title mt-3 " style="font-size: 35px;">Aqui é o titulo: {{item.titulo}} <button
-                                          class="btn btn-outline-success mr-4" [routerLink]="['/desmarcar-post', item.id]">
+                                          class="btn btn-outline mr-4 botao" [routerLink]="['/desmarcar-post', item.id]">
                                           Desmarcar postagem
                                       </button></h2>
                                   <h3 class="card-title " style="font-size: 25px; color: #2c2b2bcc ;">Postado por:
@@ -37,13 +33,13 @@
                   
                   
                                   <div class="mb-2">
-                                      <button class=" btn btn-outline-info mr-4" [routerLink]="['/editar-post', item.id]">
+                                      <button class=" btn btn-outline botao mr-4" [routerLink]="['/editar-post', item.id]">
                                           Editar
                                       </button>
                   
                   
                   
-                                      <button class="btn btn-outline-danger mr-4" [routerLink]="['/delete-post', item.id]">
+                                      <button class="btn btn-outline botao mr-4" [routerLink]="['/delete-post', item.id]">
                                           Apagar
                                       </button>
                   
@@ -53,7 +49,7 @@
                               </div>
                           </div>
                       </div>
-                    </div> 
+                    
                   </div>  
             </div>
                
