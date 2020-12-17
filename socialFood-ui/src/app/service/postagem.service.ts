@@ -16,31 +16,31 @@ export class PostagemService {
   }
 
   getAllPostagens():Observable<Postagem[]>{
-    return this.http.get<Postagem[]>('http://localhost:9000/postagens', this.token)
+    return this.http.get<Postagem[]>('https://generation-social-food.herokuapp.com/postagens', this.token)
   }
 
   getByIdPostagem(id:number): Observable<Postagem>{
-    return this.http.get<Postagem>(`http://localhost:9000/postagens/${id}`, this.token)
+    return this.http.get<Postagem>(`https://generation-social-food.herokuapp.com/postagens/${id}`, this.token)
   }
 
   postPostagem( postagem: Postagem):Observable<Postagem>{
-    return this.http.post<Postagem>('http://localhost:9000/postagens', postagem, this.token)
+    return this.http.post<Postagem>('https://generation-social-food.herokuapp.com/postagens', postagem, this.token)
   }
 
   putPostagem(postagem: Postagem): Observable<Postagem> {
-    return this.http.put<Postagem>('http://localhost:9000/postagens', postagem, this.token)
+    return this.http.put<Postagem>('https://generation-social-food.herokuapp.com/postagens', postagem, this.token)
   }
 
   deletePostagem(id: number) {
-    return this.http.delete(`http://localhost:9000/postagens/${id}`, this.token)
+    return this.http.delete(`https://generation-social-food.herokuapp.com/postagens/${id}`, this.token)
   }
 
   getByTituloPostagem(titulo: string):Observable<Postagem[]>{
-    return this.http.get<Postagem[]>(`http://localhost:9000/postagens/titulo/${titulo}`, this.token)
+    return this.http.get<Postagem[]>(`https://generation-social-food.herokuapp.com/postagens/titulo/${titulo}`, this.token)
   }
 
   getByStatusTrue():Observable<Postagem[]>{
-    return this.http.get<Postagem[]>('http://localhost:9000/postagens/status', this.token)
+    return this.http.get<Postagem[]>('https://generation-social-food.herokuapp.com/postagens/status', this.token)
   }
 
 }

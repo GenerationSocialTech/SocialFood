@@ -16,30 +16,30 @@ export class TemaService {
   }
 
   getAllTemas():Observable<Tema[]>{
-    return this.http.get<Tema[]>('http://localhost:9000/temas', this.token)
+    return this.http.get<Tema[]>('https://generation-social-food.herokuapp.com/temas', this.token)
 
   }
 
   getByIdTema(id: number):Observable<Tema>{
-    return this.http.get<Tema>(`http://localhost:9000/temas/${id}`, this.token)
+    return this.http.get<Tema>(`https://generation-social-food.herokuapp.com/temas/${id}`, this.token)
   }
 
   postTema(tema: Tema):Observable<Tema>{
-    return this.http.post<Tema>('http://localhost:9000/temas', tema, this.token)
+    return this.http.post<Tema>('https://generation-social-food.herokuapp.com/temas', tema, this.token)
 
   }
 
   putTema(tema: Tema):Observable<Tema>{
-    return this.http.put<Tema>('http://localhost:9000/temas', tema, this.token)
+    return this.http.put<Tema>('https://generation-social-food.herokuapp.com/temas', tema, this.token)
 
   }
 
   deleteTema(id: number){
-    return this.http.delete(`http://localhost:9000/temas/${id}`, this.token)
+    return this.http.delete(`https://generation-social-food.herokuapp.com/temas/${id}`, this.token)
   }
 
   getByNomeTema(tema: string):Observable<Tema[]>{
-    return this.http.get<Tema[]>(`http://localhost:9000/temas/tema/${tema}`, this.token)
+    return this.http.get<Tema[]>(`https://generation-social-food.herokuapp.com/temas/tema/${tema}`, this.token)
   }
 
  
