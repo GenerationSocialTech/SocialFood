@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+          <div class="card mt-5 mb-5 fluid text" *ngFor="let item of listaPostagens | orderBy : key :   reverse">
+            <div *ngIf='item.status'>
+              <div class="row ">
+                <div class="col-md-4 lado1">
+                  <img src="{{item.imagem}}">
+                </div>
+                <div class="col-md-8 ">
+                  <div class="card-block ">
+      
+                    <h2 class="card-title mt-3 mb-0 " style="font-size: 25px;">{{item.titulo}} <button
+                      class="btn btn-outline mr-4 botao" [routerLink]="['/desmarcar-post', item.id]">
+                      Desmarcar postagem
+                  </button>
+      
+                    </h2>
+                    <h3 class="card-title mb-0 " style="font-size: 20px; color: #2c2b2bcc ;">Postado por
+                      {{item.usuario.nome}} <br> <small style="color: #2c2b2bcc;">Tema
+                        {{item.tema.tema}}</small> </h3>
+      
+      
+                    <p class="mb-0" style="font-size:20px;">{{item.descricao}}</p>
+      
+                    <h5 class="" style="color: #2c2b2bcc">
+                      <small><br>Postado em {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date:'HH:mm'}}
+      
+                      </small>
+                    </h5>
+      
+      
+      
+                    <div class="mb-2">
+      
+      
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      
+</div>
+
+
+
