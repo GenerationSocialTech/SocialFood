@@ -5,6 +5,10 @@
   font-size: 30px;
 }
 
+a{
+  cursor: pointer;
+}
+
 .navbar {
   background: white;
   padding: 0px;

@@ -48,6 +48,7 @@ public class Postagem {
 	@ManyToOne
 	@JsonIgnoreProperties("postagem")
 	private Usuario usuario;
+	
 
 	public Usuario getUsuario() {
 		return usuario;

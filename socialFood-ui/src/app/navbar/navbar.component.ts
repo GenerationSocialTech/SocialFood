@@ -18,9 +18,13 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  sair () {
-    this.router.navigate(['/login'])
+  sair () {  
     environment.token = ''
+    environment.nome = ''
+    environment.imagem = ''
+    environment.sobre = ''
+    environment.ong = false
+    environment.id = 0  
+    this.router.navigate(['/login'])
   }
-
 }

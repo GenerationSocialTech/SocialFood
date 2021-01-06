@@ -1,3 +1,5 @@
+import { Postagem } from "./Postagem";
+
 export class User{
 
     public id: number;
@@ -7,4 +9,5 @@ export class User{
     public ong: boolean;
     public imagem: string;
     public sobre: string;
+    public postagem: Postagem[];
 }

@@ -1,56 +1,43 @@
 <div class="container">
-
-
-
-  <div class="row text">
+  <div class="row">
     <div class="col-md-12">
-      <div class="card mt-5 mb-5 fluid">
-
-        <div class="row ">
-          <div class="col-md-4 lado1">
-            <img src="{{postagem.imagem}}" class="w-100">
-          </div>
-          <div class="col-md-8 ">
-            <div class="card-block ">
-
-              <h2 class="card-title mt-3 " style="font-size: 35px;">{{postagem.titulo}} </h2>
-              <h3 class="card-title " style="font-size: 25px; color: #2c2b2bcc ;">Postado por
-                {{postagem.usuario.nome}} <br> <small style="color: #2c2b2bcc;">Tema
-                  {{postagem.tema.tema}}</small> </h3>
-
-
-              <p style="font-size:20px;">{{postagem.descricao}}</p>
-
-              <h5 class="espaco" style="color: #2c2b2bcc">
-                <small><br>Postado em {{postagem.data | date: 'dd/MM/yyyy'}} às {{postagem.data | date:'HH:mm'}},
-                  {{postagem.regiao}}
-                </small>
-              </h5>
-
-
-
-              <div class="mb-2">
-                <button class=" btn btn-outline botao mr-4" [routerLink]="['/editar-post', postagem.id]">
-                  Editar
-                </button>
-
-
-
-                <button class="btn btn-outline botao mr-4" [routerLink]="['/delete-post', postagem.id]">
-                  Apagar
-                </button>
-
-
-
+      <div class="card mt-5 mb-5 fluid text">
+          <div class="row ">
+            <div class="col-md-4 lado1">
+              <img src="{{postagem.imagem}}">
+            </div>
+            <div class="col-md-8 ">
+              <div class="card-block ">
+  
+                <h2 class="card-title mt-3 mb-0 " style="font-size: 25px;">{{postagem.titulo}} 
+                </h2>
+                <h3 class="card-title mb-0 " style="font-size: 20px; color: #2c2b2bcc ;">Postado por
+                  {{postagem.usuario.nome}} <br> <small style="color: #2c2b2bcc;">Tema
+                    {{postagem.tema.tema}}</small> </h3>
+  
+  
+                <p class="mb-0" style="font-size:20px;">{{postagem.descricao}}</p>
+  
+                <h5 class="" style="color: #2c2b2bcc">
+                  <small><br>Postado em {{postagem.data | date: 'dd/MM/yyyy'}} às {{postagem.data | date:'HH:mm'}}
+  
+                  </small>
+                </h5>
+  
+  
+  
+                <div class="mb-2">
+  
+  
+  
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
       </div>
     </div>
-
   </div>
+
 </div>
 
 

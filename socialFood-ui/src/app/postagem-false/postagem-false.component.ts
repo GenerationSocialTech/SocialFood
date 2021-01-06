@@ -31,8 +31,6 @@ export class PostagemFalseComponent implements OnInit {
   findByIdPostagem(id : number){
     this.postagemService.getByIdPostagem(id).subscribe((resp: Postagem)=>{
       this.postagem = resp;
-      console.log("postagem "+ JSON.stringify(this.postagem))
-      console.log("ativo "+this.postagem.status)
     })
 
   }
@@ -42,7 +40,7 @@ export class PostagemFalseComponent implements OnInit {
     this.postagemService.putPostagem(this.postagem).subscribe((resp: Postagem) =>{
       this.postagem = resp
       this.router.navigate(['/feed'])
-      this.alert.showAlertSuccess("Postagem marcada com sucesso")
+      this.alert.showAlertSuccess("Postagem desmarcada com sucesso")
     }, err=>{
       if(err.status == '500'){
         this.alert.showAlertDanger("Preencha todos os campos corretamente antes de enviar!")

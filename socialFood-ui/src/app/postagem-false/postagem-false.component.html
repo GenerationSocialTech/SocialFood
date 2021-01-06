@@ -1,44 +1,43 @@
 <div class="container">
-
-
-
-    <div class="row text">
-      <div class="col-md-12">
-        <div class="card mt-5 mb-5 fluid">
-  
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mt-5 mb-5 fluid text">
           <div class="row ">
             <div class="col-md-4 lado1">
-              <img src="{{postagem.imagem}}" class="w-100">
+              <img src="{{postagem.imagem}}">
             </div>
             <div class="col-md-8 ">
               <div class="card-block ">
   
-                <h2 class="card-title mt-3 " style="font-size: 35px;">{{postagem.titulo}} </h2>
-                <h3 class="card-title " style="font-size: 25px; color: #2c2b2bcc ;">Postado por
+                <h2 class="card-title mt-3 mb-0 " style="font-size: 25px;">{{postagem.titulo}} 
+                </h2>
+                <h3 class="card-title mb-0 " style="font-size: 20px; color: #2c2b2bcc ;">Postado por
                   {{postagem.usuario.nome}} <br> <small style="color: #2c2b2bcc;">Tema
                     {{postagem.tema.tema}}</small> </h3>
   
   
-                <p style="font-size:20px;">{{postagem.descricao}}</p>
+                <p class="mb-0" style="font-size:20px;">{{postagem.descricao}}</p>
   
-                <h5 class="espaco" style="color: #2c2b2bcc">
-                  <small><br>Postado em {{postagem.data | date: 'dd/MM/yyyy'}} às {{postagem.data | date:'HH:mm'}},
-                    {{postagem.regiao}}
+                <h5 class="" style="color: #2c2b2bcc">
+                  <small><br>Postado em {{postagem.data | date: 'dd/MM/yyyy'}} às {{postagem.data | date:'HH:mm'}}
+  
                   </small>
                 </h5>
   
   
   
+                <div class="mb-2">
+  
+  
+  
+                </div>
               </div>
             </div>
           </div>
-  
-        </div>
       </div>
-  
     </div>
-  
-  
+  </div>
+    
 </div>
  
     <hr class="mt-4 mb-4">
@@ -47,4 +46,3 @@
     <div class="d-flex justify-content-center mt-5">
         <button class="btn btn-outline-success mr-3" (click)="postagemFalse()">Sim</button>
         <button class="btn btn-outline-danger" (click)="btnNao()" >Não</button>
-

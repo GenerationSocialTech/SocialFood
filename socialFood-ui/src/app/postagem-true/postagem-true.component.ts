@@ -32,8 +32,6 @@ export class PostagemTrueComponent implements OnInit {
   findByIdPostagem(id : number){
     this.postagemService.getByIdPostagem(id).subscribe((resp: Postagem)=>{
       this.postagem = resp;
-      console.log("postagem "+ JSON.stringify(this.postagem))
-      console.log("ativo "+this.postagem.status)
     })
 
   }

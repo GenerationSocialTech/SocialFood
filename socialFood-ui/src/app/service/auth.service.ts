@@ -20,6 +20,10 @@ export class AuthService {
     return this.http.post<User>('https://generation-social-food.herokuapp.com/usuarios/cadastrar', user)
   }
 
+  getByIdUser(id: number): Observable<User>{
+    return this.http.get<User>(`https://generation-social-food.herokuapp.com/usuarios/${id}`)
+  }
+
   btnSair(){
     let ok = false
     let token = environment.token

@@ -41,7 +41,7 @@ export class FeedComponent implements OnInit {
   ) { }
 
   ngOnInit(){
-    this.idUsuario = environment.id;
+    
     let token = environment.token
 
     if(token == ''){
@@ -58,6 +58,15 @@ export class FeedComponent implements OnInit {
   findAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp : Postagem[]) =>{
       this.listaPostagens = resp
+      
+    })
+
+  }
+
+  findByIdUser(){
+    this.auth.getByIdUser(this.idUsuario).subscribe((resp: User)=>{
+      this.usuario = resp
+      
     })
 
   }
