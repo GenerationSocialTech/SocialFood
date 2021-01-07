@@ -1,0 +1,44 @@
+.fontLogo {
+  font: 400 30/80px; 
+  font: "Poppins", sans-serif;
+  color: #EA681C;
+  font-size: 30px;
+}
+
+a{
+  cursor: pointer;
+}
+
+.navbar {
+  background: white;
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+}
+
+/*-----CSS Nav link-----*/
+.nav-item {
+  margin-right: 30px; 
+  padding: 2px 2px;
+}
+
+.nav-item .nav-link {
+  font: 400 50px/80px "Poppins", sans-serif;
+  text-transform: capitalize;
+  color: #EA681C;
+  padding-top: 3px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bolder; 
+}
+
+.nav-item .nav-link:after {
+  display: none; 
+}
+
+.nav-item .nav-link:hover  {
+  color: white;
+  background-color: #e36262;
+}
+/*-----/CSS Nav link-----*/
+

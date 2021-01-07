@@ -1,0 +1,41 @@
+<header class="header_area">
+  <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+      <div class="container">
+
+        <img src="https://i.ibb.co/2F79T4G/logo-final-nav.png" style="width: 80px; height: 80px;"
+        alt="Logo da rede social. Consiste em dois balões de fala, um para o lado o posto do outro. No primeiro balão tem um garfo e uma colher na vertical. A cor de doto o logo é laranja.">
+        
+        <h1 class="fontLogo">Social Food.</h1>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation"> 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Nav links-->
+        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+          <ul class="nav navbar-nav menu_nav ml-auto">
+
+            <li class="nav-item"><a class="nav-link" routerLink='/home'>Home</a></li>
+
+            <li class="nav-item"><a class="nav-link" routerLink='/feed'>Feed</a></li>
+
+            <li class="nav-item" *ngIf='auth.btnLogin()'><a class="nav-link"  routerLink='/login'>Login</a></li>
+
+            <li class="nav-item" *ngIf='auth.btnLogin()'><a class="nav-link" routerLink='/cadastro'>Cadastro</a></li>
+
+            <li class="nav-item" *ngIf='auth.btnSair()'><a class="nav-link" (click)='sair()'>Sair</a></li>
+
+            <li class="nav-item"><a class="nav-link" routerLink='/sobre-nos'>Sobre nós</a></li>
+            
+          </ul>
+        </div>
+        <!--/Nav links-->
+
+      </div>
+    </nav>
+  </div>
+</header>

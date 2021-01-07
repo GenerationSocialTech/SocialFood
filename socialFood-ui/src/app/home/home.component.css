@@ -1,0 +1,209 @@
+/*-----------CSS Geral-----------*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
+p {
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+a {
+  color: black;
+}
+/*-----------/CSS Geral-----------*/
+
+/*-----------CSS Banner Um-----------*/
+
+.banner_um {
+  position: relative;
+  min-height: 900px;
+}
+
+.banner_inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 800px;
+}
+
+.maos_um {
+  background: url(https://i.ibb.co/5LY0782/bg.jpg) no-repeat scroll  center;
+  left: 0%;
+  right: 0%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100%;
+}
+
+.morango {
+  background: url(https://i.ibb.co/sRSxHc2/morango.png) no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: calc(100% - 400px);
+  height: 100%;
+  width: 100%;
+}
+
+h3 {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.p_banner_um {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+  color: white;
+  padding-bottom: 25px;
+}
+
+.btn_banner {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.btn_banner:hover {
+  background-color:	#FFDAB9;
+}
+
+.btn_banner:active {
+  background-color: #FFDAB9;
+  transform: translateY(4px);
+  border: none;
+}
+
+/*-----------/CSS Banner Um-----------*/
+
+/*-----------/CSS Banner Dois-----------*/
+
+.banner_dois {
+  height: 500px;
+}
+
+.maos_dois{
+background: url(https://ouch-cdn.icons8.com/preview/704/f07c010f-a245-4122-8cea-daa41dba83e2.png) no-repeat;
+position: absolute;
+background-position: center;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+}
+
+
+/*-----------/CSS Banner Dois-----------*/
+
+/*-----------/CSS Banner Três-----------*/
+
+.banner_três {
+  height: 900px;
+}
+
+.p_banner_tres_top {
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.p_banner_tres {
+  padding-bottom: 5%;
+}
+
+.maos_tres {
+  background: url(https://ouch-cdn.icons8.com/preview/902/5cd7c357-8824-4858-8260-e90af1869fce.png) no-repeat;
+  background-size: 600px;
+  background-position: 20% 50% ;
+  position: absolute;
+  overflow: visible;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.bg_abacaxi {
+  background: url(https://i.ibb.co/8bYmTyj/bg-certo.png) no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0;
+  height: 800px;
+  bottom: 0;
+}
+
+
+.abacaxi {
+  background: url(https://i.ibb.co/PQBKzFQ/abacaxi.png) no-repeat;
+  position: absolute;
+  top: 0;
+  right: calc(100% - 400px);
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+/*-----------/CSS Banner Três-----------*/
+
+/*-----------/CSS Banner Quatro-----------*/
+.check {
+  font-size: 26px; 
+  font-weight: bold; 
+  font-style: normal;
+  color:#ff3f60;
+}
+
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 3%;
+}
+
+.p_banner_quatro_top {
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+/*-----------/CSS Banner Quatro-----------*/
+
+/*-----------/Variáveis de Mídia-----------*/
+
+@media (max-width: 768px) {
+  .morango {
+    display: none;
+  }
+  .abacaxi {
+    display: none;
+  }
+  .maos_tres{
+    background-position: center;
+  }
+}
+@media (max-width: 991px){
+  .banner_três{
+    margin-top: 200px;
+  }
+}
